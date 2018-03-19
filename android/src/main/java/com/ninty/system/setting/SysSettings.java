@@ -9,11 +9,7 @@ import android.provider.Settings;
 public enum SysSettings {
 
     UNKNOW("", 0, ""),
-    WIFI(Settings.ACTION_WIFI_SETTINGS, 1, "EventWifiChange"),
-    LOCATION(Settings.ACTION_LOCATION_SOURCE_SETTINGS, 2, "EventLocationChange"),
-    BLUETOOTH(Settings.ACTION_BLUETOOTH_SETTINGS, 3, "EventBluetoothChange"),
-    WRITESETTINGS(Settings.ACTION_MANAGE_WRITE_SETTINGS, 4, "EventWriteSetting"),
-    AIRPLANE(Settings.ACTION_AIRPLANE_MODE_SETTINGS, 5, "EventAirplaneChange");
+    WRITESETTINGS(Settings.ACTION_MANAGE_WRITE_SETTINGS, 4, "EventWriteSetting");
 
     public String action;
     public int requestCode;
